@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+        <link href="./assets/prism/prism.css" rel="stylesheet" />
+        <title>Gilland CSS</title>
+    </head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar text-dark">
+        <div class="container">
+            <h1 class="site-title">Gilland CSS</h1>
+            <ul class="display-f gap-2">
+                <li class="text-hover-primary"><a class="text-hover-primary fw-extra-bold" href="#documentation">Documentation</a></li>
+                <li class="text-hover-primary"><a class="text-hover-primary fw-extra-bold" href="#components">Components</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- intro -->
+    <div class="container mt-5">
+        <div class="row justify-center">
+            <div class="col-xs-12 col-md-5">
+                <h2>
+                    <div class="font-xxl">Gilland Ganesha</div>
+                    <div class="font-xl text-primary">Lightweight CSS Library</div>
+                </h2>
+                <p class="text-dark mt-2 mb-3">Library CSS sebagai penunjang penyeragaman dan penyederhanaan desain aplikasi yang di kembangkan oleh tim pengembang Divisi IT PT Gilland Ganesha</p>
+                <a href="#components" class="btn-outlined-primary text-primary text-hover-light">Selengkapnya</a>
+            </div>
+            <div class="col-xs-12 col-md-5 center">
+                <img style="width: 360px;" src="assets/Logo-Gilland-Group.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- documentation -->
+    <section id="documentation" class="bg-primary-light-9 mt-5 pt-4 pb-4">
+        <div class="container">
+            <h2 class="mb-2">Documentation</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad officia ab aspernatur excepturi, nostrum esse doloremque alias repellendus animi ea corporis libero soluta doloribus nesciunt voluptates repellat laudantium mollitia molestias.</p>
+        </div>
+    </section>
+
+    <!-- components -->
+    <section id="components" class="mt-5">
+        <div class="container">
+            
+            <!-- Layout -->
+            <h2 class="mb-2">Layouts</h2>
+            <div class="row">
+                <div style="border: 1px; border-color: rgb(204, 204, 204); border-style: solid;" class="col bg-light p-1">
+                    Column
+                </div>
+                <div style="border: 1px; border-color: rgb(204, 204, 204); border-style: solid;" class="col bg-light p-1">
+                    Column
+                </div>
+                <div style="border: 1px; border-color: rgb(204, 204, 204); border-style: solid;" class="col bg-light p-1">
+                    Column
+                </div>
+                <div style="border: 1px; border-color: rgb(204, 204, 204); border-style: solid;" class="col bg-light p-1">
+                    Column
+                </div>
+            </div>
+            <div class="card bg-light mt-2">
+                <div class="card-body">
+                    <h4 class="">Contoh auto layout columns :</h4>
+                    <pre>
+                        <code class="language-html">
+                            &lt;div class="row"&gt;
+                                &lt;div class="col"&gt;
+                                    Column
+                                &lt;/div&gt;
+                                &lt;div class="col"&gt;
+                                    Column
+                                &lt;/div&gt;
+                                &lt;div class="col"&gt;
+                                    Column
+                                &lt;/div&gt;
+                                &lt;div class="col"&gt;
+                                    Column
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        </code>
+                    </pre>
+                    <h4 class="">Breakpoints :</h4>
+                    <p>Sistem grid dibuat berdasarkan enam tingkatan grid default, kode dari breakpoint sebagai berikut :</p>
+                    <ul>
+                        <li>
+                            <p>Sangat Kecil (xs) Keterangan ukuran layar : &lt;576px </p>
+                        </li>
+                        <li>
+                            <p>Kecil (sm) Keterangan ukuran layar : &gt;576px </p>
+                        </li>
+                        <li>
+                            <p>Sedang (md) Keterangan ukuran layar : &gt;768px </p>
+                        </li>
+                        <li>
+                            <p>Lebar (lg) Keterangan ukuran layar : &gt;992px </p>
+                        </li>
+                        <li>
+                            <p>Sangat Lebar (xl) Keterangan ukuran layar : &gt;1200px </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div style="border: 1px; border-color: rgb(204, 204, 204); border-style: solid;" class="col-6 bg-light p-1">
+                    Column 1-6
+                </div>
+                <div style="border: 1px; border-color: rgb(204, 204, 204); border-style: solid;" class="col bg-light p-1">
+                    Column
+                </div>
+                <div style="border: 1px; border-color: rgb(204, 204, 204); border-style: solid;" class="col bg-light p-1">
+                    Column
+                </div>
+                <div style="border: 1px; border-color: rgb(204, 204, 204); border-style: solid;" class="col bg-light p-1">
+                    Column
+                </div>
+            </div>
+            <div class="card bg-light mt-2">
+                <div class="card-body">
+                    <h4 class="">Contoh menggunakan variable width :</h4>
+                    <pre>
+                        <code class="language-html">
+                            &lt;div class="row"&gt;
+                                &lt;div class="col-6"&gt;
+                                    Column 1-6
+                                &lt;/div&gt;
+                                &lt;div class="col"&gt;
+                                    Column
+                                &lt;/div&gt;
+                                &lt;div class="col"&gt;
+                                    Column
+                                &lt;/div&gt;
+                                &lt;div class="col"&gt;
+                                    Column
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        </code>
+                    </pre>
+                    <h4 class="">Grid options :</h4>
+                    <p>Untuk penggunaan lebih spesifik seperti memastikan pada layar ponsel atau layar desktop, gunakan class <code class="text-primary">col-breakpoints-value</code> value dari columns grid berjumlah 12 dan kode dari breakpoint sebagai berikut :</p>
+                    <ul>
+                        <li>
+                            <p>Sangat Kecil (xs) Keterangan ukuran layar : &lt;576px </p>
+                        </li>
+                        <li>
+                            <p>Kecil (sm) Keterangan ukuran layar : &gt;576px </p>
+                        </li>
+                        <li>
+                            <p>Sedang (md) Keterangan ukuran layar : &gt;768px </p>
+                        </li>
+                        <li>
+                            <p>Lebar (lg) Keterangan ukuran layar : &gt;992px </p>
+                        </li>
+                        <li>
+                            <p>Sangat Lebar (xl) Keterangan ukuran layar : &gt;1200px </p>
+                        </li>
+                    </ul>
+                    <p>Contoh penggunaan : <code class="text-primary">col-sm-6</code> spesifik untuk layar kecil dengan ukuran 576px - 768px dengan jumlah column grid sebanyak 6</p>
+                </div>
+            </div>
+            
+            <!-- Cards -->
+            <h2 class="mb-2 mt-5">Cards</h2>
+            <div class="row gap-2">
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img class="card-image-top" src="https://file.edunitas.com/assets/news/img/1658394872134/thumb-imgcover_1658394872134.jpg" alt="">
+                        <!-- posisikan penempatan image harus berada di atas card-body -->
+                        <div class="card-body">
+                            <h3 class="card-title">Card Transparant
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum culpa a asperiores labore aut nobis nisi maiores similique perferendis enim. Officiis veritatis beatae aperiam pariatur? Ea amet quaerat corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">Card Light
+                                <span class="badge-edu-yellow text-dark">new</span>
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum culpa a asperiores labore aut nobis nisi maiores similique perferendis enim. Officiis veritatis beatae aperiam pariatur? Ea amet quaerat corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="card bg-dark">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary-dark ta-c">Card Dark</h3>
+                            <p class="text-secondary-dark ta-c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum culpa a asperiores labore aut nobis nisi maiores similique perferendis enim. Officiis veritatis beatae aperiam pariatur? Ea amet quaerat corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="card bg-edu-yellow">
+                        <div class="card-body">
+                            <h3 class="card-title ta-r">Card Color</h3>
+                            <p class="ta-r">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum culpa a asperiores labore aut nobis nisi maiores similique perferendis enim. Officiis veritatis beatae aperiam pariatur? Ea amet quaerat corrupti.</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="card bg-light mt-2">
+                <div class="card-body">
+                    <h4 class="">Contoh card :</h4>
+                    <pre>
+                        <code class="language-html">
+                            &lt;div class="card"&gt;
+                                &lt;img class="card-image-top" src="https://file.edunitas.com/assets/news/img/1658394872134/thumb-imgcover_1658394872134.jpg" alt=""&gt;
+                                &lt;!-- posisikan penempatan image harus berada di atas card-body --&gt;
+                                &lt;div class="card-body"&gt;
+                                    &lt;h3 class="card-title"&gt;Card Transparant&lt;/h3&gt;
+                                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum culpa a asperiores labore aut nobis nisi maiores similique perferendis enim. Officiis veritatis beatae aperiam pariatur? Ea amet quaerat corrupti.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        </code>
+                    </pre>
+                    <h4 class="">Contoh card tanpa image :</h4>
+                    <pre>
+                        <code class="language-html">
+                            &lt;div class="card bg-dark"&gt;
+                                &lt;div class="card-body"&gt;
+                                    &lt;h3 class="card-title text-primary-dark"&gt;Card Dark&lt;/h3&gt;
+                                    &lt;p class="text-secondary-dark"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum culpa a asperiores labore aut nobis nisi maiores similique perferendis enim. Officiis veritatis beatae aperiam pariatur? Ea amet quaerat corrupti.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        </code>
+                    </pre>
+                    <h4 class="">Penggunaan utilities :</h4>
+                    <h5>Background color</h5>
+                    <p>Penggunaan background color bisa di gunakan di dalam satu baris class dengan card menggunakan class <code class="text-primary">bg-warna</code> contoh : <code class="text-primary">class="card bg-secondary"</code> sedangkan untuk warna dari title dan deskripsi menggunakan class <code class="text-primary">text-warna</code> contoh : <code class="text-primary">class="card-title text-primary"</code> </p>
+                    <h4 class="">Extra :</h4>
+                    <h5>Alignment</h5>
+                    <p>Penggunaan alignment menggunakan class <code class="text-primary">ta-nilai</code> keterangan: <code class="text-primary">ta = text-align</code> keterangan nilai : <code class="text-primary">c = center | l = left | r = right | j = justify </code> contoh : <code class="text-primary">class="card-title ta-c"</code></p>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <h2 class="mb-2 mt-5">Button</h2>
+            <div class="row gap-2">
+                <div><a href="" class="btn-primary text-light font-md">Default Button</a></div>
+                <div><a href="" class="btn-edu-yellow br-none text-dark font-md">Square Button</a></div>
+                <div><a href="" class="btn-dark br-round text-light font-md">Round Button</a></div>
+                <div><a href="" class="btn-secondary br-rounded text-dark font-md">Rounded Button</a></div>
+            </div>
+            <div class="card bg-light mt-2">
+                <div class="card-body">
+                    <h4 class="">Contoh button :</h4>
+                    <pre>
+                        <code class="language-html">
+                            &lt;a href="" class="btn-primary text-light font-md"&gt;Default Button&lt;/a&gt;
+                            &lt;a href="" class="btn-edu-yellow br-none text-dark font-md"&gt;Square Button&lt;/a&gt;
+                            &lt;a href="" class="btn-dark br-round text-light font-md"&gt;Round Button&lt;/a&gt;
+                            &lt;a href="" class="btn-secondary br-rounded text-dark font-md"&gt;Rounded Button&lt;/a&gt;
+                            &lt;!-- atau --&gt;
+                            &lt;button class="btn-primary text-light font-md"&gt;Default Button&lt;/button&gt;
+                            &lt;button class="btn-edu-yellow br-none text-dark font-md"&gt;Square Button&lt;/button&gt;
+                            &lt;button class="btn-dark br-round text-light font-md"&gt;Round Button&lt;/button&gt;
+                            &lt;button class="btn-secondary br-rounded text-dark font-md"&gt;Rounded Button&lt;/button&gt;
+                        </code>
+                    </pre>
+                    <h4 class="">Penggunaan utilities :</h4>
+                    <h5>Border radius</h5>
+                    <p>Class button default memiliki border radius dengan ukuran 8px, untuk merubah style dari border menggunakan <code class="text-primary">br-nilai</code> contoh : <code class="text-primary">class="btn-primary br-none"</code> untuk merubah style button agar tidak memiliki border radius, dan juga bisa menggunakan nilai lain seperti : <code class="text-primary">br-none | br-round | br-rounded</code></p>
+                    <h5>Color</h5>
+                    <p>Untuk memanggil class button harus diikuti dengan kode pemanggilan warna background seperti : <code class="text-primary">btn-warna</code> contoh : <code class="text-primary">class="btn-primary"</code> sedangkan untuk warna dari text default berwarna dark dan untuk merubah bisa menggunakan class <code class="text-primary">text-warna</code> contoh : <code class="text-primary">class="btn-edu-navy text-light"</code></p>
+                    <h4 class="">Extra :</h4>
+                    <h5>Font Size</h5>
+                    <p>Untuk merubah ukuran text bisa menggunakan class <code class="text-primary">font-ukuran</code> keterangan: <code class="text-primary">font = font-size</code> keterangan ukuran : <code class="text-primary">sm = 1rem * 0.75 | md = 1rem | lg = 1rem * 1.5 | xl = 1rem * 2 | xxl = 1rem * 3 </code> contoh : <code class="text-primary">class="btn-primary text-light font-md"</code></p>
+                </div>
+            </div>
+
+            <h2 class="mb-2 mt-5">Button Outlined</h2>
+            <div class="row gap-2">
+                <div><a href="" class="btn-outlined-primary text-primary text-hover-light font-md">Default Button</a></div>
+                <div><a href="" class="btn-outlined-edu-yellow text-edu-yellow br-none text-hover-dark font-md">Square Button</a></div>
+                <div><a href="" class="btn-outlined-dark br-round text-dark text-hover-light font-md">Round Button</a></div>
+                <div><a href="" class="btn-outlined-secondary br-rounded text-secondary text-hover-dark font-md">Rounded Button</a></div>
+            </div>
+            <div class="card bg-light mt-2">
+                <div class="card-body">
+                    <h4 class="">Contoh button outlined :</h4>
+                    <pre>
+                        <code class="language-html">
+                            &lt;a href="" class="btn-outlined-primary text-primary text-hover-light font-md"&gt;Default Button&lt;/a&gt;
+                            &lt;a href="" class="btn-outlined-edu-yellow text-edu-yellow br-none text-hover-dark font-md"&gt;Square Button&lt;/a&gt;
+                            &lt;a href="" class="btn-outlined-dark br-round text-dark text-hover-light font-md"&gt;Round Button&lt;/a&gt;
+                            &lt;a href="" class="btn-outlined-secondary br-rounded text-secondary text-hover-dark font-md"&gt;Rounded Button&lt;/a&gt;
+                            &lt;!-- atau --&gt;
+                            &lt;button class="btn-outlined-primary text-primary text-hover-light font-md"&gt;Default Button&lt;/button&gt;
+                            &lt;button class="btn-outlined-edu-yellow text-edu-yellow br-none text-hover-dark font-md"&gt;Square Button&lt;/button&gt;
+                            &lt;button class="btn-outlined-dark br-round text-dark text-hover-light font-md"&gt;Round Button&lt;/button&gt;
+                            &lt;button class="btn-outlined-secondary br-rounded text-secondary text-hover-dark font-md"&gt;Rounded Button&lt;/button&gt;
+                        </code>
+                    </pre>
+                    <h4 class="">Penggunaan utilities :</h4>
+                    <h5>Color</h5>
+                    <p>Class button outlined secara default memiliki style yang sama dengan button, yang membedakanya adalah pada background yang defaultnya adalah transparant dan warna justru diterapkan pada border, perbedaan paling menonjol pada button outlined adalah pada style ketika keadaan hover, jadi pada button outlined pemanggilan button harus diikuti dengan warna text yang sama dan memaggil class untuk text ketika di hover contoh : <code class="text-primary">class="btn-outlined-primary text-primary text-hover-light"</code> </p>
+                    <h4 class="">Extra :</h4>
+                    <h5>Font Size</h5>
+                    <p>Untuk merubah ukuran text bisa menggunakan class <code class="text-primary">font-ukuran</code> keterangan: <code class="text-primary">font = font-size</code> keterangan ukuran : <code class="text-primary">sm = 1rem * 0.75 | md = 1rem | lg = 1rem * 1.5 | xl = 1rem * 2 | xxl = 1rem * 3 </code> contoh : <code class="text-primary">class="btn-primary text-light font-md"</code></p>
+                </div>
+            </div>
+
+            <!-- Tables -->
+            <h2 class="mb-2 mt-5">Tabel</h2>
+            <div class="container-table p-1" style="border: 2px solid #ddd;">
+                <div class="container-table-body">
+                    <table class="table-responsive">
+                        <thead>
+                            <tr>
+                                <th>Nama</th>
+                                <th>Lengkap</th>
+                                <th>Divisi</th>
+                                <th>Points</th>
+                                <th>Points</th>
+                                <th>Points</th>
+                                <th>Points</th>
+                                <th>Points</th>
+                                <th>Points</th>
+                                <th>Points</th>
+                                <th>Points</th>
+                                <th>Points</th>
+                                <th>Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Aprea</td>
+                                <td>Kosasih</td>
+                                <td>Information Technology</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Aji</td>
+                                <td>Darmaji</td>
+                                <td>Information Technology</td>
+                                <td>94</td>
+                                <td>94</td>
+                                <td>94</td>
+                                <td>94</td>
+                                <td>94</td>
+                                <td>94</td>
+                                <td>94</td>
+                                <td>94</td>
+                                <td>94</td>
+                                <td>94</td>
+                            </tr>
+                            <tr>
+                                <td>Anjas</td>
+                                <td>Mara</td>
+                                <td>Information Technology</td>
+                                <td>67</td>
+                                <td>67</td>
+                                <td>67</td>
+                                <td>67</td>
+                                <td>67</td>
+                                <td>67</td>
+                                <td>67</td>
+                                <td>67</td>
+                                <td>67</td>
+                                <td>67</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card bg-light mt-2">
+                <div class="card-body">
+                    <h4 class="">Contoh Tabel :</h4>
+                    <pre>
+                        <code class="language-html">
+                            &lt;div class="container-table p-1"&gt;
+                                &lt;div class="container-table-body"&gt;
+                                    &lt;table class="table-responsive"&gt;
+                                        &lt;thead&gt;
+                                            &lt;tr&gt;
+                                                &lt;th&gt;Nama&lt;/th&gt;
+                                                &lt;th&gt;Lengkap&lt;/th&gt;
+                                                &lt;th&gt;Divisi&lt;/th&gt;
+                                                &lt;th&gt;Points&lt;/th&gt;
+                                                &lt;th&gt;Points&lt;/th&gt;
+                                                &lt;th&gt;Points&lt;/th&gt;
+                                                &lt;th&gt;Points&lt;/th&gt;
+                                                &lt;th&gt;Points&lt;/th&gt;
+                                                &lt;th&gt;Points&lt;/th&gt;
+                                                &lt;th&gt;Points&lt;/th&gt;
+                                                &lt;th&gt;Points&lt;/th&gt;
+                                                &lt;th&gt;Points&lt;/th&gt;
+                                                &lt;th&gt;Points&lt;/th&gt;
+                                            &lt;/tr&gt;
+                                        &lt;/thead&gt;
+                                        &lt;tbody&gt;
+                                            &lt;tr&gt;
+                                                &lt;td&gt;Aprea&lt;/td&gt;
+                                                &lt;td&gt;Kosasih&lt;/td&gt;
+                                                &lt;td&gt;Information Technology&lt;/td&gt;
+                                                &lt;td&gt;50&lt;/td&gt;
+                                                &lt;td&gt;50&lt;/td&gt;
+                                                &lt;td&gt;50&lt;/td&gt;
+                                                &lt;td&gt;50&lt;/td&gt;
+                                                &lt;td&gt;50&lt;/td&gt;
+                                                &lt;td&gt;50&lt;/td&gt;
+                                                &lt;td&gt;50&lt;/td&gt;
+                                                &lt;td&gt;50&lt;/td&gt;
+                                                &lt;td&gt;50&lt;/td&gt;
+                                                &lt;td&gt;50&lt;/td&gt;
+                                            &lt;/tr&gt;
+                                            &lt;tr&gt;
+                                                &lt;td&gt;Aji&lt;/td&gt;
+                                                &lt;td&gt;Darmaji&lt;/td&gt;
+                                                &lt;td&gt;Information Technology&lt;/td&gt;
+                                                &lt;td&gt;94&lt;/td&gt;
+                                                &lt;td&gt;94&lt;/td&gt;
+                                                &lt;td&gt;94&lt;/td&gt;
+                                                &lt;td&gt;94&lt;/td&gt;
+                                                &lt;td&gt;94&lt;/td&gt;
+                                                &lt;td&gt;94&lt;/td&gt;
+                                                &lt;td&gt;94&lt;/td&gt;
+                                                &lt;td&gt;94&lt;/td&gt;
+                                                &lt;td&gt;94&lt;/td&gt;
+                                                &lt;td&gt;94&lt;/td&gt;
+                                            &lt;/tr&gt;
+                                            &lt;tr&gt;
+                                                &lt;td&gt;Anjas&lt;/td&gt;
+                                                &lt;td&gt;Mara&lt;/td&gt;
+                                                &lt;td&gt;Information Technology&lt;/td&gt;
+                                                &lt;td&gt;67&lt;/td&gt;
+                                                &lt;td&gt;67&lt;/td&gt;
+                                                &lt;td&gt;67&lt;/td&gt;
+                                                &lt;td&gt;67&lt;/td&gt;
+                                                &lt;td&gt;67&lt;/td&gt;
+                                                &lt;td&gt;67&lt;/td&gt;
+                                                &lt;td&gt;67&lt;/td&gt;
+                                                &lt;td&gt;67&lt;/td&gt;
+                                                &lt;td&gt;67&lt;/td&gt;
+                                                &lt;td&gt;67&lt;/td&gt;
+                                            &lt;/tr&gt;
+                                        &lt;/tbody&gt;
+                                    &lt;/table&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;    
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+    <!-- footer -->
+    <footer class="bg-dark pt-3 pb-3 mt-5">
+        <div class="container">
+            <p class="text-primary-dark">Copyright 2022 | made with &#10084; in Bogor</p>
+        </div>
+    </footer>
+
+    
+	<script src="./assets/prism/prism.js"></script>
+    
+</body>
+</html>

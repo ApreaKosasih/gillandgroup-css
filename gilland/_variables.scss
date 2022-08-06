@@ -1,0 +1,55 @@
+// theme light color
+$light: #F8F9FA;
+$primary: #6200EE !default;
+$secondary: #03DAC5 !default;
+$error: #B00020 !default;
+
+// theme dark color
+$dark: #121212;
+$primary-dark: #BB86FC !default;
+$secondary-dark: #03DAC5 !default;
+$error-dark: #CF6679 !default;
+
+// edu color
+$edu-navy: #02588E;
+$edu-darkblue: #003049;
+$edu-blue: #1661D5;
+$edu-yellow: #FFCE00;
+$edu-orange: #F77F00;
+
+//color palette
+
+$colors: (
+    "light": $light,
+    "dark": $dark,
+    "primary": $primary,
+    "primary-dark": $primary-dark,
+    "secondary": $secondary,
+    "secondary-dark": $secondary-dark,
+    "error": $error,
+    "error-dark": $error-dark,
+    "edu-navy": $edu-navy,
+    "edu-darkblue": $edu-darkblue,
+    "edu-blue": $edu-blue,
+    "edu-yellow": $edu-yellow,
+    "edu-orange": $edu-orange,
+);
+
+// spacer
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
+
+// border
+$base-border-thickness: 1px !default;
+$base-border-radius: 8px !default;
+
+// shadow
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
+
+// fontsize
+$base-font-size: 1rem !default;
+$font-size-sm: $base-font-size * 0.75 !default;
+$font-size-md: $base-font-size !default;
+$font-size-lg: $base-font-size * 1.5 !default;
+$font-size-xl: $base-font-size * 2 !default;
+$font-size-xxl: $base-font-size * 3 !default;

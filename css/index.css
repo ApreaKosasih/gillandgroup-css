@@ -62,6 +62,12 @@ body {
   width: 50%;
 }
 
+.col-12 {
+  box-sizing: border-box;
+  flex-grow: 0;
+  width: 100%;
+}
+
 .gap-2 > * {
   padding: 8px;
 }
@@ -133,9 +139,12 @@ body {
     width: 25%;
   }
 }
+.display-none {
+  display: none;
+}
 @media (min-width: 768px) {
-  .display-md-none {
-    display: none;
+  .display-md-block {
+    display: block;
   }
 }
 .text-light {
@@ -768,6 +777,10 @@ body {
     opacity: 1;
   }
 }
+.image-fluid img {
+  max-width: 100%;
+  height: auto;
+}
 
 .p-1 {
   padding: 0.75rem;
@@ -827,10 +840,6 @@ body {
 
 .br-rounded {
   border-radius: 32px;
-}
-
-.display-f {
-  display: flex;
 }
 
 .font-sm {

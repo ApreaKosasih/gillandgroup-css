@@ -135,17 +135,17 @@ $utilities: (
             "rounded":$base-border-radius * 4,
         )
     ),
-    "display": (
-        "prefix": "display",
-        "values": (
-            "n": none,
-            "b": block,
-            "f": flex,
-            "i": inline,
-            "i-f":inline-flex,
-            "i-b":inline-block,
-        )
-    ),
+    // "display": (
+    //     "prefix": "display",
+    //     "values": (
+    //         "n": none,
+    //         "b": block,
+    //         "f": flex,
+    //         "i": inline,
+    //         "i-f":inline-flex,
+    //         "i-b":inline-block,
+    //     )
+    // ),
     "font-size": (
         "prefix": "font",
         "values": (

@@ -116,6 +116,12 @@ $val in $grid-gaps {
 
 // display responsive classes
 
+@each $val in $display-values {
+    .display-#{$val} {
+        display: $val;
+    }
+}
+
 @include xs {
     @each $val in $display-values {
         .display-xs-#{$val} {

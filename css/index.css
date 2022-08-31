@@ -133,6 +133,11 @@ body {
     width: 25%;
   }
 }
+@media (min-width: 768px) {
+  .display-md-none {
+    display: none;
+  }
+}
 .text-light {
   color: #F8F9FA;
 }

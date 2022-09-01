@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/index.css">
         <link href="./assets/prism/prism.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="./assets/prism/prism.js"></script>
         <title>Gilland CSS</title>
     </head>
 <body>
@@ -500,6 +502,91 @@
                     </pre>
                 </div>
             </div>
+
+            <!-- Modal -->
+            <a class="mt-4 btn-primary text-light font-md" data-show="modal" data-target="modalPlain">Tampilkan Modal</a>
+
+            <div class="card bg-light mt-2">
+                <div class="card-body">
+                    
+                    <h4 class="">Button Triggere Modal :</h4>
+                    <pre>
+                        <code class="language-html">
+                            &lt;a class="mt-4 btn-primary text-light font-md" data-show="modal" data-target="modalPlain"&gt;Tampilkan Modal&lt;/a&gt;
+                        </code>
+                    </pre>
+
+                    <h4 class="">Contoh Modal :</h4>
+                    <pre>
+                        <code class="language-html">
+                            &lt;div id="modalPlain" class="modal" role="modal"&gt;
+                                &lt;div class="modal-content"&gt;
+                                    &lt;div class="modal-header"&gt;
+                                        &lt;span class="modal-close text-hover-primary"&gt;×&lt;/span&gt;
+                                        &lt;h4&gt;Title&lt;/h4&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="modal-body"&gt;
+                                        &lt;h5&gt;Modal Body&lt;/h5&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="modal-footer"&gt;
+                                        &lt;h5&gt;Modal Footer&lt;/h5&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                    <h4 class="">Jquery :</h4>
+                    <pre>
+                        <code class="language-javascript">
+                            var triggerBtn = $('[data-show=modal]').click(function(event){
+                                var modalId = $(this).attr('data-target');        
+                                        $('#' + modalId).show();
+                                });
+                        
+                                $('.modal-close').click(function(event){        
+                                        $(this).parents('.modal').hide();
+                                });
+                        
+                                $(window).click(function(event){
+                                        if (event.target.className === 'modal') {
+                                                $(event.target).hide();
+                                        }
+                                });
+                        
+                                function modalShow(modalId){
+                                    $('#' + modalId).show();
+                                }
+                                
+                                function modalHide(modalId){
+                                    $('#' + modalId).hide();
+                                }
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- Modal -->
+
+    <!-- modal -->
+    <section>
+        <div id="modalPlain" class="modal" role="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-close text-hover-primary">×</span>
+                    <h4>Title</h4>
+                </div>
+                <div class="modal-body">
+                    <h5>Modal Body</h5>
+                </div>
+                <div class="modal-footer">
+                    <h5>Modal Footer</h5>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -510,8 +597,30 @@
         </div>
     </footer>
 
-    
-	<script src="./assets/prism/prism.js"></script>
+    <script>
+        var triggerBtn = $('[data-show=modal]').click(function(event){
+        var modalId = $(this).attr('data-target');        
+                $('#' + modalId).show();
+        });
+
+        $('.modal-close').click(function(event){        
+                $(this).parents('.modal').hide();
+        });
+
+        $(window).click(function(event){
+                if (event.target.className === 'modal') {
+                        $(event.target).hide();
+                }
+        });
+
+        function modalShow(modalId){
+            $('#' + modalId).show();
+        }
+        
+        function modalHide(modalId){
+            $('#' + modalId).hide();
+        }
+    </script>
     
 </body>
 </html>

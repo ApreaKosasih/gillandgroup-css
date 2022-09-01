@@ -142,6 +142,10 @@ body {
 .display-none {
   display: none;
 }
+
+.display-flex {
+  display: flex;
+}
 @media (min-width: 768px) {
   .display-md-block {
     display: block;

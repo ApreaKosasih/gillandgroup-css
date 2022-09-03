@@ -17,7 +17,7 @@
  
     &-content {
         position: relative;
-        background-color: $light;
+        background-color: #fff;
         margin: 5% auto;
         padding: 0 $base-padding;
         width: 50%;
@@ -38,6 +38,7 @@
  
     &-footer {
         padding: 4px 16px;
+        padding-bottom: 16px;
     }
  
     &-close {

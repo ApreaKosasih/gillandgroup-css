@@ -123,6 +123,11 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .col-md-4 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
   .col-md-5 {
     box-sizing: border-box;
     flex-grow: 0;
@@ -787,7 +792,7 @@ body {
 }
 .modal-content {
   position: relative;
-  background-color: #F8F9FA;
+  background-color: #fff;
   margin: 5% auto;
   padding: 0 0.75rem;
   width: 50%;
@@ -804,6 +809,7 @@ body {
 }
 .modal-footer {
   padding: 4px 16px;
+  padding-bottom: 16px;
 }
 .modal-close {
   float: right;
@@ -870,7 +876,6 @@ body {
   padding: 0;
   background: none;
   border: none;
-  line-height: 1.6;
   box-shadow: none;
 }
 

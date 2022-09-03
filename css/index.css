@@ -848,12 +848,12 @@ body {
   position: relative;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  padding: 8px;
 }
 
 .form-group {
-  background-color: #fff;
+  background-color: #F8F9FA;
   border-radius: 8px;
+  padding: 8px;
 }
 
 .form-group input {

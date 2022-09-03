@@ -2,7 +2,6 @@
   position: relative;
   margin-top: $base-margin*2;
   margin-bottom: $base-margin *2;
-  padding: 8px
 }
 
 .form-radio{
@@ -10,8 +9,9 @@
 }
 .form-group {
   @extend %form-layout;
-  background-color: #fff;
+  background-color: $light;
   border-radius: 8px;
+  padding: 8px
 }
 
 .form-inline > .form-group,

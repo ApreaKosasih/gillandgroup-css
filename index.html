@@ -821,12 +821,12 @@
             <div class="card">
               <div class="card-body">
                 <form>
-                  <div class="form-group">
+                  <div class="form-group mb-2 mt-2">
                     <input type="text" required="required" />
                     <label for="input" class="control-label">Input</label
                     ><i class="bar"></i>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group mb-2 mt-2">
                     <textarea required="required"></textarea>
                     <label for="textarea" class="control-label">Textarea</label
                     ><i class="bar"></i>
@@ -840,12 +840,12 @@
             <pre>
                         <code class="language-html">
                             &lt;form&gt;
-                                &lt;div class="form-group"&gt;
+                                &lt;div class="form-group mb-2 mt-2"&gt;
                                   &lt;input type="text" required="required" /&gt;
                                   &lt;label for="input" class="control-label"&gt;Input&lt;/label
                                   &gt;&lt;i class="bar"&gt;&lt;/i&gt;
                                 &lt;/div&gt;
-                                &lt;div class="form-group"&gt;
+                                &lt;div class="form-group mb-2 mt-2"&gt;
                                   &lt;textarea required="required"&gt;&lt;/textarea&gt;
                                   &lt;label for="textarea" class="control-label"&gt;Textarea&lt;/label
                                   &gt;&lt;i class="bar"&gt;&lt;/i&gt;
@@ -862,7 +862,7 @@
             <div class="card">
               <div class="card-body">
                 <form>
-                  <div class="form-group">
+                  <div class="form-group mb-2 mt-2">
                     <select>
                       <option>Value 1</option>
                       <option>Value 2</option>
@@ -879,7 +879,7 @@
             <pre>
                           <code class="language-html">
                             &lt;form&gt;
-                                &lt;div class="form-group"&gt;
+                                &lt;div class="form-group mb-2 mt-2"&gt;
                                   &lt;select&gt;
                                     &lt;option&gt;Value 1&lt;/option&gt;
                                     &lt;option&gt;Value 2&lt;/option&gt;
@@ -1007,14 +1007,14 @@
           </div>
           <div class="modal-body">
             <div class="row gap-2">
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <div class="form-group">
                   <input type="text" required="required" />
                   <label for="input" class="control-label">Input</label
                   ><i class="bar"></i>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <div class="form-group">
                   <input type="text" required="required" />
                   <label for="input" class="control-label">Input</label
@@ -1031,11 +1031,14 @@
                   ><i class="bar"></i>
                 </div>
               </div>
+              <div class="col-md-2">
+                <a href="#" class="btn-primary text-light">Submit</a>
+              </div>
             </div>
             <hr>
           </div>
           <div class="modal-footer">
-            <h5>Modal Footer</h5>
+            <button id="closeModal" class="btn btn-error text-light">Tutup</button>
           </div>
         </div>
       </div>
@@ -1057,6 +1060,10 @@
       });
 
       $(".modal-close").click(function (event) {
+        $(this).parents(".modal").hide();
+      });
+
+      $("#closeModal").click(function (event) {
         $(this).parents(".modal").hide();
       });
 

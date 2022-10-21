@@ -123,6 +123,16 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .col-md-2 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-md-3 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
   .col-md-4 {
     box-sizing: border-box;
     flex-grow: 0;
@@ -852,8 +862,6 @@ body {
 
 .form-group, .form-radio {
   position: relative;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .form-group {
@@ -873,7 +881,7 @@ body {
 .form-group select {
   width: 100%;
   font-size: 1rem;
-  padding: 0;
+  padding: 6px 0;
   background: none;
   border: none;
   box-shadow: none;

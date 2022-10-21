@@ -1,47 +1,109 @@
+// .container-table {
+//   display: block;
+//   border: $base-border-thickness solid $light;
+//   border-radius: $base-border-radius;
+
+//   .container-table-body {
+//     font-size: $base-font-size;
+//     overflow-x: auto;
+//     a {
+//       text-decoration: none;
+//       color: $primary;
+//     }
+//   }
+// }
+
+// .table-responsive {
+//   border-collapse: collapse;
+//   border-spacing: 0;
+//   width: 100%;
+//   //border: 1px solid #ddd;
+
+//   thead {
+//     border-bottom: 2px solid $primary;
+//     color: $light;
+//     background-color: $dark;
+//     font-size: $base-font-size;
+//     th {
+//       border: 1px solid rgb(105, 105, 105);
+//       padding: 10px;
+//     }
+//   }
+
+//   tbody {
+//     border: 1px solid #ddd;
+//     td,
+//     th {
+//       //border: 1px solid #ddd;
+//       text-align: left;
+//       padding: 10px;
+//     }
+//     tr:nth-child(even) {
+//       background-color: #f2f2f2;
+//     }
+//   }
+// }
 
 .container-table {
-    display: block;
-    border: $base-border-thickness solid $light;
-    border-radius: $base-border-radius;
+  display: block;
+  border: $base-border-thickness solid $light;
+  border-radius: $base-border-radius;
+  box-shadow: $base-box-shadow;
 
-    .container-table-body {
-        font-size: $base-font-size;
-        overflow-x: auto;
-        a {
-            text-decoration: none;
-            color: $primary;
-        }
+  .container-table-body {
+    font-size: $base-font-size;
+    overflow-x: auto;
+    a {
+      text-decoration: none;
+      color: $primary;
     }
+  }
 }
 
-
 .table-responsive {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    //border: 1px solid #ddd;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  //border: 1px solid #ddd;
 
-    thead {
-        border-bottom: 2px solid $primary;
-        color: $light;
-        background-color: $dark;
-        font-size: $base-font-size;
-        th {
-            border: 1px solid rgb(105, 105, 105);
-            padding: 10px;
-        }
+  thead {
+    border-bottom: 2px solid $light;
+    color: $primary;
+    background-color: $white;
+    font-size: $font-size-md;
+    th {
+      // border: 1px solid rgb(105, 105, 105);
+      padding: 10px;
     }
-
-    tbody {
-        border: 1px solid #ddd;
-        td, th {
-            //border: 1px solid #ddd;
-            text-align: left;
-            padding: 10px;
-        }
-        tr:nth-child(even){background-color: #f2f2f2}
-    } 
-    
+    &.ta-c {
+      text-align: center;
+    }
+    &.ta-l {
+      text-align: left;
+    }
+    &.ta-r {
+      text-align: right;
+    }
   }
-  
-  
+
+  tbody {
+    border: 1px solid #ddd;
+    td,
+    th {
+      //border: 1px solid #ddd;
+      padding: 10px;
+      &.ta-c {
+        text-align: center;
+      }
+      &.ta-l {
+        text-align: left;
+      }
+      &.ta-r {
+        text-align: right;
+      }
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  }
+}

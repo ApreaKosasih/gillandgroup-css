@@ -1,0 +1,150 @@
+.sidenav {
+  display: block;
+  width: 0;
+  position: fixed;
+  height: 100%;
+  overflow-x: scroll;
+  margin: 0;
+  padding: 0;
+  box-shadow: $base-box-shadow;
+  z-index: 999;
+  white-space: nowrap;
+  transition: 0.25s;
+
+  .header {
+    padding: $base-padding $base-padding * 2;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: $font-size-md;
+    font-weight: bold;
+    display: block;
+    color: $light;
+    background-color: $dark;
+    border: 1px solid $dark;
+  }
+
+  .dropdown-container {
+    display: none;
+    background-color: rgb(244, 242, 255);
+    border-bottom: 1px solid grey;
+
+    a {
+      padding: $base-padding $base-padding * 2;
+      text-decoration: none;
+      cursor: pointer;
+      color: $dark;
+      font-weight: bold;
+      font-size: $font-size-sm;
+      display: block;
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+
+      &:hover:not(.active) {
+        background-color: $dark;
+        color: $white;
+      }
+
+      &.active {
+        background-color: $primary;
+        color: $white;
+      }
+    }
+  }
+
+  .dropdown-btn {
+    padding: $base-padding $base-padding * 2;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: $font-size-sm;
+    display: block;
+    color: $dark;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+
+    &:hover:not(.active) {
+      background-color: $primary;
+      color: $white;
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+    }
+
+    &.active {
+      background-color: $primary;
+      color: $white;
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+    }
+  }
+}
+
+@each $key, $val in $colors {
+  .sidenav-#{$key} {
+    @extend .sidenav;
+    background-color: $val;
+  }
+}
+
+.main {
+  position: relative;
+  margin-left: 0;
+}
+
+.bg-header {
+  background-attachment: fixed;
+  // background-image: linear-gradient(to bottom right, #002984, #757de8);
+  background-image: linear-gradient(to bottom right, $primary, #757de8);
+  background-repeat: no-repeat;
+  background-size: 100% 280px;
+  background-position: right top;
+  height: 280px;
+  width: 100%;
+  z-index: -1;
+  border-radius: 0 0 64px 0;
+  position: fixed;
+}
+
+#main {
+  transition: margin-left 0.25s;
+}
+
+#btn-main {
+  transition: margin-left 0.25s;
+}
+
+.toggle-btn {
+  position: fixed;
+  z-index: 999;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: $base-padding;
+  border-radius: 0 50px 50px 0;
+  background-color: $dark;
+  color: $light;
+  font-size: large;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    position: relative;
+    margin-left: 0 !important;
+  }
+}

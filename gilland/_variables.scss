@@ -1,38 +1,42 @@
 // theme light color
-$light: #F8F9FA;
-$primary: #6200EE !default;
-$secondary: #03DAC5 !default;
-$error: #B00020 !default;
+$light: #f8f9fa;
+$white: #ffffff;
+// $primary: #6200ee !default;
+$primary: #007f5f !default;
+// $secondary: #03dac5 !default;
+$secondary: #064789 !default;
+$error: #b00020 !default;
 
 // theme dark color
 $dark: #121212;
-$primary-dark: #BB86FC !default;
-$secondary-dark: #03DAC5 !default;
-$error-dark: #CF6679 !default;
+$primary-dark: #bb86fc !default;
+$secondary-dark: #03dac5 !default;
+$error-dark: #cf6679 !default;
 
 // edu color
-$edu-navy: #02588E;
+$edu-navy: #02588e;
 $edu-darkblue: #003049;
-$edu-blue: #1661D5;
-$edu-yellow: #FFCE00;
-$edu-orange: #F77F00;
+$edu-blue: #1661d5;
+$edu-yellow: #ffce00;
+$edu-orange: #f77f00;
 
 //color palette
 
 $colors: (
-    "light": $light,
-    "dark": $dark,
-    "primary": $primary,
-    "primary-dark": $primary-dark,
-    "secondary": $secondary,
-    "secondary-dark": $secondary-dark,
-    "error": $error,
-    "error-dark": $error-dark,
-    "edu-navy": $edu-navy,
-    "edu-darkblue": $edu-darkblue,
-    "edu-blue": $edu-blue,
-    "edu-yellow": $edu-yellow,
-    "edu-orange": $edu-orange,
+  "light": $light,
+  "white": $white,
+  "dark": $dark,
+  "primary": $primary,
+  "primary-dark": $primary-dark,
+  "secondary": $secondary,
+  "secondary-dark": $secondary-dark,
+  "error": $error,
+  "error-dark": $error-dark,
+  "edu-navy": $edu-navy,
+  "edu-darkblue": $edu-darkblue,
+  "edu-blue": $edu-blue,
+  "edu-yellow": $edu-yellow,
+  "edu-orange": $edu-orange,
 );
 
 // spacer
@@ -44,7 +48,7 @@ $base-border-thickness: 1px !default;
 $base-border-radius: 8px !default;
 
 // shadow
-$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
 
 // fontsize
 $base-font-size: 1rem !default;

@@ -4,14 +4,14 @@
   // margin-bottom: $base-margin *2;
 }
 
-.form-radio{
+.form-radio {
   @extend %form-layout;
 }
 .form-group {
   @extend %form-layout;
   background-color: $light;
   border-radius: 8px;
-  padding: 8px
+  padding: 8px;
 }
 
 .form-inline > .form-group,
@@ -312,3 +312,8 @@
   width: 100%;
 }
 
+input[type="radio"] {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+}

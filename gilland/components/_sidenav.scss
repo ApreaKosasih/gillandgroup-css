@@ -182,7 +182,7 @@
 
   .header:hover {
     color: $white;
-    background-color: $dark;
+    background-color: $primary;
   }
 
   .dropdown-container {
@@ -205,12 +205,12 @@
       transition: all 0.25s ease;
 
       &:hover:not(.active) {
-        background-color: $primary;
+        background-color: $secondary;
         color: $white;
       }
 
       &.active {
-        background-color: $primary;
+        background-color: $secondary;
         color: $white;
       }
     }
@@ -242,7 +242,7 @@
 
     &.active {
       background-color: $secondary;
-      color: $dark;
+      color: $white;
       -webkit-transition: all 0.25s ease;
       -moz-transition: all 0.25s ease;
       -ms-transition: all 0.25s ease;

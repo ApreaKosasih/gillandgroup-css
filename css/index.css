@@ -209,6 +209,7 @@ input[type=radio] {
 .progress-bar li:first-child,
 .progress-bar li:last-child {
   flex: 1;
+  text-align: left;
 }
 .progress-bar li:last-child {
   text-align: right;
@@ -278,6 +279,10 @@ input[type=radio] {
 }
 .progress-bar:hover li:not(:hover) span {
   opacity: 0;
+}
+
+.tab {
+  display: none;
 }
 
 .p-1 {

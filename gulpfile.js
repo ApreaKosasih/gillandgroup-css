@@ -17,7 +17,7 @@ function watchTask(){
 
 exports.default = series(buildStyles, watchTask)
 
-// //setting for CI
+//setting for CI
 
 // const { src, dest, watch, series} = require('gulp')
 // const sass = require('gulp-sass')(require('sass'))

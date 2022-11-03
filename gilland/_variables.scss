@@ -1,17 +1,18 @@
 // theme light color
-$light: #f8f9fa;
+$light: #f5f5f7;
+$whitelight: #fbfbfb;
 $white: #ffffff;
 // $primary: #6200ee !default;
-$primary: #007f5f !default;
+$secondary: #6e6e73 !default;
 // $secondary: #03dac5 !default;
-$secondary: #064789 !default;
+$primary: #0071e3 !default;
 $error: #b00020 !default;
 
 // theme dark color
-$dark: #121212;
-$primary-dark: #bb86fc !default;
-$secondary-dark: #03dac5 !default;
-$error-dark: #cf6679 !default;
+$dark: #323232;
+// $primary-dark: #bb86fc !default;
+// $secondary-dark: #03dac5 !default;
+// $error-dark: #cf6679 !default;
 
 // edu color
 $edu-navy: #02588e;
@@ -25,13 +26,14 @@ $edu-orange: #f77f00;
 $colors: (
   "light": $light,
   "white": $white,
+  "whitelight": $whitelight,
   "dark": $dark,
   "primary": $primary,
-  "primary-dark": $primary-dark,
+  // "primary-dark": $primary-dark,
   "secondary": $secondary,
-  "secondary-dark": $secondary-dark,
+  // "secondary-dark": $secondary-dark,
   "error": $error,
-  "error-dark": $error-dark,
+  // "error-dark": $error-dark,
   "edu-navy": $edu-navy,
   "edu-darkblue": $edu-darkblue,
   "edu-blue": $edu-blue,
